@@ -4,9 +4,9 @@ import java.util.Scanner;
 public class ArrayToAverage {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        scanner.close();
         System.out.println("Enter a list of numbers separated by spaces:");
         String userInput = scanner.nextLine();
+        scanner.close();
 
         double average = calculateAverage(userInput);
         System.out.println("Average: " + average);
